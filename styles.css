@@ -34,14 +34,18 @@ nav ul li a:hover {
 
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
 }
 
-article {
+section {
     border: 1px solid #ccc;
     padding: 1rem;
+}
+
+section:last-child {
+    grid-column: span 2; /* Neemt twee kolommen in beslag */
 }
 
 footer {
@@ -49,4 +53,9 @@ footer {
     padding: 1rem;
     background-color: #333;
     color: #fff;
+}
+img{
+    width: 45%;
+    height: auto;
+    
 }
